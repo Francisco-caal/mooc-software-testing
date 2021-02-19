@@ -37,4 +37,11 @@ public class GHappyTest {
         boolean test = gTest.gHappy(input);
         Assertions.assertEquals(test, result);
     }
+
+    @Test
+    public void noG(){
+        GHappy gTest = new GHappy();
+        boolean result = gTest.gHappy("lalala");
+        Assertions.assertTrue(result);
+    }
 }
